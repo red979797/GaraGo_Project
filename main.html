@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bighead">
+          <div class="searchArea">
+            <form method="GET" action="pro.php?location=키워드&page=1" >
+            <input type="text" placeholder="검색어를 입력하세요" name="search">
+            <button type="submit">검색</button>
+        </form>
+          </div>
+          <ul class="nav">
+          <div class="home-button">
+            <a href="main.html">
+              <img src="photo/exlogo.png">
+            </a>
+          </div>
+            <li><a href="weatherex.php">날씨</a></li>
+            <li><a href="messageex.php">재난안전문자</a></li>
+            <li><a href="foodex.php">맛집 TOP5</a></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <input type="radio" name="slide" id="slide01" checked>
+          <input type="radio" name="slide" id="slide02">
+          <input type="radio" name="slide" id="slide03">
+
+          <div class="slidewrap">
+            <ul class="slidelist">
+              <li>
+                <a>
+                  <label for="slide03" class="left"></label>
+                  <img src="photo/beach.jpg">
+                  <label for="slide02" class="right"></label>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <label for="slide01" class="left"></label>
+                  <img src="photo/river.jpg">
+                  <label for="slide03" class="right"></label>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <label for="slide02" class="left"></label>
+                  <img src="photo/road.jpg">
+                  <label for="slide01" class="right"></label>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cardbox">
+        <div class="card">
+            <div class="icon_png">
+              <img src="photo/food.png">
+            </div>
+            <div class="contents1_bold">맛집 </div>
+            <div class="contents2">각종 맛집 !</div>
+            <div class="cardbutton">
+              <button onclick="location.href='nofood.php?a=서울&b=&page=1&location=맛집&search=서울'">바로가기</button>
+          </div>
+        </div>
+          
+        <div class="card">
+            <div class="icon_png">
+              <img src="photo/tour.png">
+            </div>
+            <div class="contents1_bold">여행지 </div>
+            <div class="contents2">어디로 여행갈래 ?</div>
+            <div class="cardbutton">
+              <button onclick="location.href='notrip.php?a=서울&b=&page=1&location=여행지&search=서울'">바로가기</button>
+          </div>
+        </div>
+  
+          <div class="card">
+            <div class="icon_png">
+              <img src="photo/tradition.png">
+            </div>
+            <div class="contents1_bold">문화재 </div>
+            <div class="contents2">해당지역의 문화재</div>
+            <div class="cardbutton">
+              <button onclick="location.href='noculture.php?a=서울&b=&page=1&location=문화재&search=서울'">바로가기</button>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="icon_png">
+              <img src="photo/festival1.png">
+            </div>
+            <div class="contents1_bold">축제 </div>
+            <div class="contents2">여러지역의 축제</div>
+            <div class="cardbutton">
+              <button onclick="location.href='nofestival.php?a=서울&b=&page=1&location=축제&search=서울'">바로가기</button>
+            </div>
+          </div>
+  
+
+  
+
+        <div class="card">
+          <div class="icon_png">
+            <img src="photo/weather.png">
+          </div>
+          <div class="contents1_bold">오늘의 날씨 </div>
+          <div class="contents2">날씨도 체크하고 여행 떠나자 !</div>
+          <div class="cardbutton">
+            <button onclick="location.href='weatherex.php'">바로가기</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon_png">
+            <img src="photo/disaster.png">
+          </div>
+          <div class="contents1_bold">안전 안내 문자 </div>
+          <div class="contents2">혹시 모를 안전사고를 대비 !</div>
+          <div class="cardbutton">
+            <button onclick="location.href='messageex.php'">바로가기</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon_png">
+            <img src="photo/foodicon1.png">
+          </div>
+          <div class="contents1_bold">인기 맛집 TOP5 </div>
+          <div class="contents2">각 지역의 인기 맛집 5곳 추천!</div>
+          <div class="cardbutton">
+            <button onclick="location.href='foodex.php'">바로가기</button>
+          </div>
+        </div>
+
+      
+      </div>
+  </body>
+</html>
